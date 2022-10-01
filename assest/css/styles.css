@@ -251,6 +251,7 @@ body.light-theme
   padding: 1rem 2.25rem;
   backdrop-filter: blur(10px);
   transition: .4s; /* for light mode animation */
+  display: none;
 }
 
 .nav__list
@@ -1107,6 +1108,14 @@ top: 100%;
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 768px){
+  .nav__menu{
+   display: block;
+  }
+  .nav-ul{
+    display: none;
+  }
+}
 @media screen and (max-width: 320px)
 {
   .nav__menu{
